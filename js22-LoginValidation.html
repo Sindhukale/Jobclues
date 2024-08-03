@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBS WEBSITE TEMPLATE-SIN TUTORIAL</title>
+    <style>
+    div {
+        margin-left: 33%;
+        height:99%;
+        width: 38%;
+        text-align: center;
+        font-size: large;
+        color:#ffff;
+        background-image:linear-gradient(to right ,#6db9ef,#7ce08a);
+    }
+    body{
+            background-image:url(login_nl_cover.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            color:cadetblue;
+        }
+</style>
+    <script>
+        function myvalid(){
+        var uname=document.myform.username.value;
+        var pass=document.myform.password.value;
+        if(uname=="" || pass==null){
+            alert("Name cant be blank");
+        }
+        else if(pass.length<6){
+            alert("Password must be 6 letters");
+            return false;
+        }
+            return true;
+    }
+    </script>
+</head>
+<body>
+    
+        <div class="abc">
+    <center>
+        <form action="index.html"  name="myform" onsubmit="return myvalid(this)">
+        USER NAME <input id="username" type="text" placeholder="Enter name" required/><br>
+        PASSWORD<input id="password" type="password" placeholder="Enter email"required/><br>
+        <input type="submit">
+    </center>
+    </div>
+    
+    </form> 
+</body>
+</html>

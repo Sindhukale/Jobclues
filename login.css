@@ -1,0 +1,170 @@
+/* Reset default styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Menu bar */
+  .menu-bar {
+    background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+  }
+  
+  /* Navbar */
+  .navbar-brand img {
+    width: 100px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  /* Banner */
+  .banner {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('business-office-meetings-marketing.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: textanimation 2s infinite;
+  }
+  
+  @keyframes textanimation {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* All Jobs Section */
+  .search-job {
+    padding: 20px;
+    background-image: linear-gradient(to right, #6db9ef, #7ce08a);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .search-job .btn-primary {
+    background-color: #fff;
+    color: #6db9ef;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  /* Top Recruiters Section */
+  .recruiter {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .mnc1, .mnc2, .mnc3 {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: textanimation 5s linear infinite;
+  }
+  
+  .mnc1 {
+    animation-name: textanimationmnc1;
+  }
+  
+  .mnc2 {
+    animation-name: textanimationmnc2;
+  }
+  
+  .mnc3 {
+    animation-name: textanimationmnc3;
+  }
+  
+  @keyframes textanimationmnc1 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  @keyframes textanimationmnc2 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes textanimationmnc3 {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .recruiter img {
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  /* Job Updates Section */
+  .containerupdates1 {
+    padding: 50px;
+    background-color: #f8f8fa;
+  }
+  
+  .company-details {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .job-updates h4 {
+    font-size: 18px;
+  }
+  
+  .job-updates p {
+    margin: 10px 0;
+  }
+  
+  .apply-btn {
+    text-align: center;
+  }
+  
+  .apply-btn .btn-primary {
+    background-color: #6db9ef;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 5px 0;
+    }
+  
+    .banner h1 {
+      font-size: 30px;
+    }
+  }
+  
